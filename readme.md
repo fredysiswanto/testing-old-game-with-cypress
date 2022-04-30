@@ -1,15 +1,15 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/fredysiswanto/e2e-ecommerce">
+  <a href="https://siwanto.web.id/">
     <img src="https://fredysiswanto.github.io/projects/assets/images/logo_white.svg" alt="Logo" width="auto" height="50">
   </a>
 
-  <h3 align="center">Testing E2E</h3>
+  <h3 align="center">Testing Old Game with Cypress</h3>
 
 ## About The Project
 
-Testing API dan E2E Website
+this projects testing old game javascript with cypress
 
 <!-- GETTING STARTED -->
 

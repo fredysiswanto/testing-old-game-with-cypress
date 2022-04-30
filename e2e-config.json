@@ -1,5 +1,5 @@
 {
-  "baseUrl": "https://clever-robo-test.netlify.app",
+  "baseUrl": "",
   "integrationFolder": "cypress/integration/e2e",
   "retries": 0,
   "chromeWebSecurity": false,

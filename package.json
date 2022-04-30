@@ -14,11 +14,11 @@
     "test:report": "npm run scripts || npm run posttest",
     "test:report-api": "npm run test:api || npm run posttest",
     "test:report-e2e": "npm run test:e2e || npm run posttest",
-    "test": "cypress run ./cypress/integration/**/*.js --config-file komunal-config",
+    "test": "cypress run ./cypress/integration/**/*.js --config-file e2e-config",
     "test:api-gui": "cypress open --config-file api-config.json",
     "test:api": "cypress run --config-file api-config.json",
-    "test:e2e-gui": "cypress open --config-file komunal-config",
-    "test:e2e": "cypress run --config-file komunal-config"
+    "test:e2e-gui": "cypress open --config-file e2e-config",
+    "test:e2e": "cypress run --config-file e2e-config"
   },
   "keywords": [],
   "author": "",
