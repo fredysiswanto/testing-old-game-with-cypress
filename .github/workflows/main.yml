@@ -24,7 +24,7 @@ jobs:
           record: false
           parallel: true
           group: 'Actions example'
-          command: npm run test:e2e
+          # command: npm run test:e2e
 
         env:
           # pass the Dashboard record key as an environment variable
