@@ -1,0 +1,150 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 2,
+    "failures": -1,
+    "start": "2022-05-08T15:42:59.629Z",
+    "end": "2022-05-08T15:43:06.107Z",
+    "duration": 6478,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 66.66666666666666,
+    "other": 2,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d88ae8aa-e8ad-48d1-a2cf-5054e209c2f7",
+      "title": "",
+      "fullFile": "cypress/integration/e2e/sudoku.js",
+      "file": "cypress/integration/e2e/sudoku.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a206febb-7c71-4ab3-8837-d7b519a6f158",
+          "title": "sidoku",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "open apps",
+              "fullTitle": "sidoku open apps",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "a6d4b219-b7b6-4bb1-ab98-26eb8dcaef2c",
+              "parentUUID": "a206febb-7c71-4ab3-8837-d7b519a6f158",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check row",
+              "fullTitle": "sidoku check row",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "382c616b-f9ac-432d-8aca-8c8a98249edb",
+              "parentUUID": "a206febb-7c71-4ab3-8837-d7b519a6f158",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "check row",
+              "fullTitle": "sidoku check row",
+              "timedOut": null,
+              "duration": 6354,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\nlet data;\ncy.window().then(elem => {\n  data = elem.game.game.validation;\n  const col = data.col;\n  const row = data.row;\n  const sect = data.sect;\n  cy.get('td').children().not('[class=\"disabled\"]').each(elem => {\n    const dataSementara = [];\n    const section = sect[Math.floor(Number([elem[0].col]) / 3)][Math.floor(Number([elem[0].row]) / 3)];\n    cy.log(section); // potentialNum(row, col, section);\n    // sect[Math.floor(Number(col[elem[0].col]) / 3)][\n    //   Math.floor(Number(row[elem[0].row]) / 3)\n    // ];\n    // dataSementara.push(col[elem[0].col]);\n    // dataSementara.push(row[elem[0].row]);\n    // cy.log(col[elem[0].col], row[elem[0].row]);\n    // cy.log(elem[0].col, elem[0].row);\n    // cy.get(elem[0]).type(3);\n    // cy.log(dataSementara);\n    // elem[0].col, elem[0].row;\n    cy.log(potentialNum(row, col, section));\n  }); // cy.log(sect[0][0]);\n});",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'game')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'game')\n    at Context.eval (https://siwanto.web.id/__cypress/tests?p=cypress\\integration\\e2e\\sudoku.js:140:24)",
+                "diff": null
+              },
+              "uuid": "8cfdf6cd-b183-4520-8fae-f039cdc22ebc",
+              "parentUUID": "a206febb-7c71-4ab3-8837-d7b519a6f158",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "8cfdf6cd-b183-4520-8fae-f039cdc22ebc"
+          ],
+          "pending": [
+            "a6d4b219-b7b6-4bb1-ab98-26eb8dcaef2c",
+            "382c616b-f9ac-432d-8aca-8c8a98249edb"
+          ],
+          "skipped": [],
+          "duration": 6354,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

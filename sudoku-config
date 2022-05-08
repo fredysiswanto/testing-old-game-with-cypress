@@ -1,6 +1,7 @@
-{
-  "projectId": "w346t6",
-  "baseUrl": "https://siwanto.web.id/",
+module.exports = {
+  "baseUrl": "http://127.0.0.1:5500/docs/sudoku",
+  "integrationFolder": "cypress/integration/e2e",
+  "retries": 0,
   "chromeWebSecurity": false,
   "viewportWidth": 1280,
   "viewportHeight": 800,
@@ -14,5 +15,6 @@
       "html": false,
       "json": true
     }
-  }
+  },
+  "projectId": "w346t6"
 }

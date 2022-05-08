@@ -1,0 +1,39 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.container {
+  width: 500px;
+  height: 50vh;
+  margin: 50px auto;
+  background-color: rgba(63, 53, 53, 0.403);
+}
+
+ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 0;
+  /* width: 200px; */
+  background-color: #f1f1f1;
+}
+li {
+  border: 1px solid #9e9ebf;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+  font-weight: 600;
+}

@@ -1,5 +1,5 @@
 {
-  "name": "e2e-web",
+  "name": "testing-old-game-with-cypress",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,11 +17,11 @@
     "test": "cypress run ./cypress/integration/**/*.js --config-file e2e-config",
     "test:api-gui": "cypress open --config-file api-config.json",
     "test:api": "cypress run --config-file api-config.json",
-    "test:e2e-gui": "cypress open --config-file e2e-config",
+    "test:e2e-gui": "cypress open --config-file sudoku-config",
     "test:e2e": "cypress run --config-file e2e-config"
   },
   "keywords": [],
-  "author": "",
+  "author": "Fredy Siswanto",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^9.4.1",
