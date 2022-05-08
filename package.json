@@ -24,7 +24,7 @@
   "author": "Fredy Siswanto",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.4.1",
+    "cypress": "9.4.1",
     "cypress-multi-reporters": "^1.5.0",
     "cypress-social-logins": "^1.11.3",
     "mocha": "^9.1.1",
