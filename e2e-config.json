@@ -1,5 +1,6 @@
 {
-  "baseUrl": "",
+  "projectId": "w346t6",
+  "baseUrl": "https://siwanto.web.id/",
   "integrationFolder": "cypress/integration/e2e",
   "retries": 0,
   "chromeWebSecurity": false,

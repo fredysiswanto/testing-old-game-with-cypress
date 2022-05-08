@@ -21,10 +21,10 @@ jobs:
           # verifies the number of passing tests
           # and passes a variable to Cypress
           # to be read using Cypress.env("lastName")
-          record: false
-          parallel: true
-          group: 'Actions example'
-          # command: npm run test:e2e
+          # record: false
+          # parallel: true
+          # group: 'Actions example'
+          command: npm run test:e2e
 
         env:
           # pass the Dashboard record key as an environment variable
